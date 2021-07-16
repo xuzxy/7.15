@@ -2,7 +2,7 @@ package com.hp.stringclass;
 //string 类常见API
 public class StringDemo03 {
     public static void main(String[] args) {
-        // 0 123456789012345
+        // 0 123 4567 8901 2345
         String str ="thinking in java";//java编程思想
         //查询10 的字符是什么
         char c = str.charAt(10);

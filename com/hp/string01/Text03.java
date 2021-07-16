@@ -13,16 +13,14 @@ import java.util.Scanner;
 public class Text03 {
     public static void main(String[] args) {
         xu();
-
     }
     private static void xu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("输入你的生日，格式为yyyy-MM-dd");
        String sc = scanner.nextLine();
-       //  String birthday = scanner.nextLine();
-        String strDateFormat = "yyyy-MM-dd";
+       String strDateFormat = "yyyy-MM-dd";
         SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
-        long i = new Date().getTime();
+        long i = new Date().getTime(); // //获得真实的时间，long值
         try {
             Date parse = sdf.parse(sc);
             i -= parse.getTime();
